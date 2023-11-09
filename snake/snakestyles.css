@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Muli;
+    color: #ffffff;
+  }
+body {
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
+    border-radius: inherit;
+    padding: 10px;
+    display: flex;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+
+nav li {
+    display: flex;
+    padding-left: 1rem;
+    margin-right: 5rem;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav h1:hover {
+    color:#000000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction:column;
+}
+
+h2 {
+    margin-bottom: 1em;
+    text-align: right;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
+    border-radius: inherit;
+    padding: 10px;
+    display: flex;
+}
+    .board {
+        display: grid;
+        font-weight: bold;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 10px;
+        margin: 0 auto;
+    }
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+    }
+    .cell:hover::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 5px solid #ffffff;
+        border-radius: inherit;
+        filter: blur(2px);
+        z-index: -1;
+    }
+    .cell:hover {
+        background-color: transparent;
+        border: 5px solid #ffffff;
+    }
+
+    .cell[style*="background"] {
+        background-color: transparent;
+    }
+
+    .cell:disabled:hover {
+        background-color: transparent;
+    }
+
+    .flex-container2 {
+        display: flex;
+        flex-direction: row; /* Arrange items in a row */
+        align-items: center; /* Vertically center-align items within the container */
+        margin-top: 20px;
+      }
+      #winner-display {
+        flex: 2.3; /* Takes up 2/3 (66.67%) of the available space */
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        background-color: transparent;
+        height: 50px;
+        margin-right: 10px; /* Add spacing between the two items */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      #reset-button {
+        flex: 1; /* Takes up 1/3 (33.33%) of the available space */
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        background-color: transparent;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    #reset-button:hover {
+        background-color: transparent;
+        border: 5px solid #ffffff;
+    }
+    /* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+    .board {
+        display: grid;
+        font-weight: bold;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 10px;
+        margin: 0 auto;
+    }
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        font-size: 48px;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    .cell {
+        width: 150px;
+        height: 150px;
+    }
+
+}

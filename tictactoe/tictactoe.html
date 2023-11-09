@@ -1,0 +1,45 @@
+<!-- FILEPATH: /Users/clayblasingame/Desktop/Development/Web Apps/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="/tictactoe/tictactoestyles.css" />
+        <script src="/scripts.js" type="text/javascript"></script>
+        <script
+            src="https://kit.fontawesome.com/13388f1b9c.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <a href="/index.html"><h1>blasin.games</h1></a>
+            <div class="links">
+                <li><a href="https://github.com/tcblasingame" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </div>
+        </nav>
+        <div class="flex-container">
+            <h2>Tic Tac Toe</h2>
+            <div class="board" id="board">
+                <script>
+                    const board = document.getElementById("board");
+                    const cells = [];
+                    let currentPlayer = "X";
+                    let winner = null;
+
+                    for (let i = 0; i < 9; i++) {
+                        const cell = document.createElement("div");
+                        cell.className = "cell";
+                        cell.dataset.index = i;
+                        cell.addEventListener("click", handleCellClick);
+                        cells.push(cell);
+                        board.appendChild(cell);
+                    }
+                </script>
+            </div>
+            <div class="flex-container2">
+                <div id="winner-display" readonly></div>
+                <button id="reset-button">New Game</button>
+            </div>
+        </div>
+    </body>
+</html>

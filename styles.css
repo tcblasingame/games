@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Muli;
+    font-weight: bold;
+  }
+body {
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
+    border-radius: inherit;
+    padding: 10px;
+    display: flex;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+
+nav li {
+    display: flex;
+    padding-left: 1rem;
+    margin-right: 5rem;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+nav h1:hover {
+    color:#000000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction:column;
+}
+
+h2 {
+    margin-bottom: 1em;
+    text-align: right;
+}
+.Tic {
+    font-size: 1.5em;
+     color: #ffffff;
+}
+
+.Tic:hover {
+    transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+    color: #000000;
+}
+
+.Snake {
+    font-size: 1.5em;
+     color: #ffffff;
+}
+
+.Snake:hover {
+    transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+    color: #000000;
+}
+
+.Mini {
+    font-size: 1.5em;
+     color: #ffffff;
+}
+
+.Mini:hover {
+    transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+    color: #000000;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a row */
+    align-items: center; /* Vertically center-align items within the container */
+    text-decoration: none;
+    list-style: none;
+    gap: 2em; /* Add vertical spacing between the contents */
+}
