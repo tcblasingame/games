@@ -269,7 +269,12 @@ body::before {
     }
 }
 @media screen and (max-width: 800px) {
-  .flex-container {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-links {
+    display: flex;
     width: 90vmin;
     height: 115vmin;
   }
