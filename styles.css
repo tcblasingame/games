@@ -273,6 +273,11 @@ body::before {
     width: 90vmin;
     height: 115vmin;
   }
+  
+  .cell {
+        width: 150px;
+        height: 150px;
+    }
   .game-links {
     display: flex;
     width: 90vmin;
