@@ -25,9 +25,7 @@
     padding: 10px;
     display: flex;
 }
-  .a2 {
-    color: #ffffff
-  }
+
  
   .flex-container {
     display: flex;
@@ -36,7 +34,6 @@
     }
   nav {
     position: fixed;
-   
     top: 0;
     left: 0;
     width: 100%;
@@ -47,6 +44,7 @@
     padding: 1rem 2rem;
     background: transparent;
     color: #ffffff;
+    font-weight: bold;
     
   }
   nav ul {
@@ -72,18 +70,18 @@
     
   }
   h2 {
-    margin-top: 1em;
-    margin-bottom: .5em;
-    margin-right: .5em;
+    margin-top: 2em;
     text-align: right;
+    margin-bottom: 1em;
+    margin-right: .5em;
     color: #ffffff;
     font-size: 1.5em;
     display: inline-block;
     
   }
+
 .container{
   padding: 2rem;
-  
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -148,7 +146,15 @@ button:hover{
     background: rgba(0, 0, 0, 0.20);
     color:#ffffff
 }
-
+.backbtn {
+  margin-top: .5em;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.17em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 800px) {
   .container {

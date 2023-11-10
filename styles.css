@@ -23,6 +23,7 @@
     padding: 1rem 2rem;
     background: transparent;
     color: #ffffff;
+    flex-direction: row;
   }
   nav ul {
     display: flex;
@@ -46,7 +47,7 @@
     color: #ffffff;
   }
   h2 {
-    margin-top: 3em;
+    margin-top: 2em;
     text-align: right;
     margin-bottom: 1em;
     color: #ffffff;
@@ -156,6 +157,7 @@
   flex-direction: row; /* Arrange items in a row */
   align-items: center; /* Vertically center-align items within the container */
   margin-top: 20px;
+  margin-bottom: 2em;
 }
 #winner-display {
     flex: 2.3; /* Takes up 2/3 (66.67%) of the available space */
