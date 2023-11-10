@@ -1,34 +1,17 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family:Muli;
-    font-weight: bold;
-  }
-body {
-    text-align: center;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    font-family: 'Muli';
+  }
+  body {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    justify-content: center;
+    min-height: 100vh;
     background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
-    border-radius: inherit;
-    padding: 10px;
-    display: flex;
-}
-nav {
+  }
+  nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,48 +22,56 @@ nav {
     padding: 1rem 2rem;
     background: transparent;
     color: #ffffff;
-}
-
-nav ul {
+  }
+  nav ul {
     display: flex;
     list-style: none;
     color: #ffffff;
-}
-
-nav li {
+  }
+  nav li {
     display: flex;
     padding-left: 1rem;
-    margin-right: 5rem;
     color: #ffffff;
     font-size: 1.5em;
-}
-
-a {
+    margin-top: .5em;
+  }
+  nav h1:hover {
+    color:#000000;
+  }
+  a {
     text-decoration: none;
     color: #ffffff;
-}
-
+  }
+  h2 {
+    margin-top: 3em;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+  .game-links {
+  display: flex;
+  flex-direction:column;
+  gap: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+  }
+  .flex-container2 {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Vertically center-align items within the container */
+    margin-top: 20px;
+  }
+  h2 {
+    margin-top: 3em;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
 .links {
     display: flex;
     flex-direction: row;
 }
-
-nav h1:hover {
-    color:#000000;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction:column;
-}
-
-h2 {
-    margin-bottom: 1em;
-    text-align: right;
-}
 .Tic {
-    font-size: 1.5em;
      color: #ffffff;
+     list-style: none;
 }
 
 .Tic:hover {
@@ -89,8 +80,9 @@ h2 {
 }
 
 .Snake {
-    font-size: 1.5em;
      color: #ffffff;
+     list-style: none;
+     text-align: center;
 }
 
 .Snake:hover {
@@ -99,8 +91,9 @@ h2 {
 }
 
 .Mini {
-    font-size: 1.5em;
      color: #ffffff;
+     list-style: none;
+     text-align: center;
 }
 
 .Mini:hover {
@@ -108,11 +101,3 @@ h2 {
     color: #000000;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column; /* Arrange items in a row */
-    align-items: center; /* Vertically center-align items within the container */
-    text-decoration: none;
-    list-style: none;
-    gap: 2em; /* Add vertical spacing between the contents */
-}
