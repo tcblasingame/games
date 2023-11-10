@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Muli';
+    font-family: 'Pixelify Sans';
   }
   body {
     display: flex;
@@ -27,6 +27,7 @@
     display: flex;
     list-style: none;
     color: #ffffff;
+    font-weight: bold;
   }
   nav li {
     display: flex;
@@ -48,6 +49,16 @@
     margin-bottom: 1em;
     color: #ffffff;
     font-size: 1.5em;
+    display: inline-block;
+    
+  }
+  .backbtn {
+    margin-top: .5em;
+    text-align: left;
+    margin-bottom: 1em;
+    color: #ffffff;
+    font-size: 1.17em;
+    display: inline-block;
   }
   .game-links {
   display: flex;
@@ -56,6 +67,10 @@
   font-weight: bold;
   font-size: 1.5em;
   }
+  .flex-container {
+    display: flex;
+    flex-direction:column;
+    }
   .flex-container2 {
     display: flex;
     flex-direction: row; /* Arrange items in a row */
@@ -224,6 +239,8 @@ body::before {
       cursor: pointer;
       border-right: 1px solid #ffffff;
     }
+
+    
 @media (min-width: 768px) {
     .board {
         display: grid;
@@ -243,41 +260,28 @@ body::before {
         cursor: pointer;
         user-select: none;
     }
-    .wrapper {
-      width: 65vmin;
-      height: 70vmin;
-    }
-    .game-details {
-      font-size: 1.2rem;
-      padding: 20px 27px;
-    }
-    .controls {
-      display: none;
-    }
-    .controls i {
-      padding: 25px 0;
-      font-size: 1.3rem;
-    }
 }
 /* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
+@media (max-width: 780px) {
     .cell {
         width: 150px;
         height: 150px;
     }
-    .wrapper {
-      width: 90vmin;
-      height: 115vmin;
-    }
-    .game-details {
-      font-size: 1rem;
-      padding: 15px 27px;
-    }
-    .controls {
-      display: flex;
-    }
-    .controls i {
-      padding: 15px 0;
-      font-size: 1rem;
-    }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .snakecontrols {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
 }
