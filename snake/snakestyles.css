@@ -121,11 +121,11 @@ h2 {
   background: #ffffff;
 }
 
-.controls {
+.snakecontrols {
   display: none;
   justify-content: space-between;
 }
-.controls i {
+.snakecontrols i {
   padding: 25px 0;
   text-align: center;
   font-size: 1.3rem;
