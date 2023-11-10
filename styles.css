@@ -39,6 +39,7 @@
   }
   nav h1:hover {
     color:#000000;
+    transform: scale(1.2);
   }
   a {
     text-decoration: none;
@@ -62,6 +63,7 @@
     display: inline-block;
     
   }
+  
   .backbtn {
     margin-top: .5em;
     text-align: center;
@@ -72,28 +74,38 @@
     justify-content: center;
     align-items: center;
   }
-  .game-links {
-  display: flex;
-  flex-direction:column;
-  gap: 1em;
-  font-weight: bold;
-  font-size: 1.5em;
-  }
-  .flex-container {
+  .linkbox {
     display: flex;
-    flex-direction:column;
-    }
-  .flex-container2 {
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
-    align-items: center; /* Vertically center-align items within the container */
-    margin-top: 20px;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    width: 50%;
+    max-width: 72vm;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
   }
   
-.links {
+  .links {
     display: flex;
     flex-direction: row;
 }
+  .game-links {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center; /* center the content horizontally */
+  }
+ 
 .Tic {
      color: #ffffff;
      list-style: none;
@@ -114,16 +126,36 @@
     transform: scale(1.2); /* Change the scale value to make it slightly bigger */
     color: #000000;
 }
-
-.Mini {
-     color: #ffffff;
-     list-style: none;
-     text-align: center;
+.Tetris {
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
 }
 
-.Mini:hover {
-    transform: scale(1.2); /* Change the scale value to make it slightly bigger */
-    color: #000000;
+.Tetris:hover {
+ transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+ color: #000000;
+}
+
+.Chess {
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+}
+
+.Chess:hover {
+ transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+ color: #000000;
+}
+.flex-container {
+  display: flex;
+  flex-direction:column;
+  }
+.flex-container2 {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Vertically center-align items within the container */
+  margin-top: 20px;
 }
 #winner-display {
     flex: 2.3; /* Takes up 2/3 (66.67%) of the available space */
