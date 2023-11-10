@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pixelify Sans';
+    font-family: 'Pixelify Sans'; 
+    font-size: 16pt;
   }
   body {
     display: flex;
@@ -163,6 +164,8 @@ body::before {
         grid-gap: 10px;
         margin: 0 auto;
         color: #ffffff;
+        width: 65vmin;
+        height: 70vmin;
         
     }
     .cell {
@@ -272,20 +275,6 @@ body::before {
   .wrapper {
     width: 90vmin;
     height: 115vmin;
-  }
-  
-  .cell {
-        width: 150px;
-        height: 150px;
-    }
-  .game-links {
-    display: flex;
-    width: 90vmin;
-    height: 115vmin;
-  }
-  .game-details {
-    font-size: 1rem;
-    padding: 15px 27px;
   }
   .snakecontrols {
     display: flex;
