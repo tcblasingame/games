@@ -148,6 +148,17 @@
  transform: scale(1.2); /* Change the scale value to make it slightly bigger */
  color: #000000;
 }
+.Astrology {
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.Astrology:hover {
+ transform: scale(1.2); /* Change the scale value to make it slightly bigger */
+ color: #000000;
+}
 .flex-container {
   display: flex;
   flex-direction:column;
