@@ -278,7 +278,7 @@ body::before {
       border-top: #ffffff .0001rem solid;
     }
     .play-board .food {
-      background: #2b014f
+      background: #000000;
     }
     .play-board .head {
       background: #ffffff;
