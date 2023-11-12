@@ -1,8 +1,4 @@
 
-jQuery('#chess_board').on('scroll touchmove touchend touchstart contextmenu', function(e){
-    e.preventDefault();
-    });
-
 // Wait for the DOM to be fully loaded before executing code
 document.addEventListener('DOMContentLoaded', () => {
     let board = null; // Initialize the chessboard
