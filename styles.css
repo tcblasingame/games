@@ -139,6 +139,14 @@
   
   z-index: 1;
 }
+.flex-container5 {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Vertically center-align items within the container */
+    margin-top: 1em;
+    margin-bottom: 2em;
+  
+}
 #winner-display {
     flex: 2.3; /* Takes up 2/3 (66.67%) of the available space */
     
@@ -283,7 +291,7 @@ body::before {
       color: #ffffff;
       width: calc(100% / 4);
       cursor: pointer;
-      border-right: 1px solid #ffffff;
+      border-radius: 5px;
     }
 
 
@@ -303,7 +311,13 @@ body::before {
     grid-template-columns: repeat(3, 123px);
     grid-template-rows: repeat(3, 123px);
     grid-gap: 10px;
-    margin: 0 auto;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: -1.5rem;
+  }
+  .play-board {
+    border-bottom: .0001rem solid #ffffff;
   }
   button2 {
     width: 300px;

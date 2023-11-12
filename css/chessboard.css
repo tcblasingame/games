@@ -1,18 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Pixelify Sans'; 
-    font-size: 16pt;
-  }
-  body {
-    display: flex;
-    margin-bottom: 3em;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pixelify Sans'; 
+  font-size: 16pt;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgb(219, 105, 185), rgb(83, 0, 128));
+}
   body::before {
     content: "";
     position: absolute;
@@ -90,12 +89,12 @@
   backdrop-filter: blur(11.6px);
   -webkit-backdrop-filter: blur(11.6px);
   background: rgba(0, 0, 0, 0.20);
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 h1{
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
 
 }
 
