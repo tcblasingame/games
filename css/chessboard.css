@@ -136,21 +136,33 @@ button:hover{
     background: transparent;
 }
 
-.move-history{
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    height: 100px;
-    width: 400px;
-    overflow-y: scroll;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.20);
-    backdrop-filter: blur(11.6px);
-    -webkit-backdrop-filter: blur(11.6px);
-    background: rgba(0, 0, 0, 0.20);
-    color:#ffffff
+.move-history {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100px;
+  width: 400px;
+  overflow-y: scroll;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  background: rgba(0, 0, 0, 0.20);
+  color: #ffffff;
 }
+
+.move-history::-webkit-scrollbar {
+  
+  background-color: transparent;
+}
+
+.move-history::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+
 .backbtn {
   margin-top: .5em;
   text-align: center;
