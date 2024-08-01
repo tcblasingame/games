@@ -138,7 +138,7 @@ svg {
 	--box-glow-color: rgb(114 114 114 / 0.5);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 740px) {
 	.container {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;

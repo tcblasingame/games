@@ -23,8 +23,8 @@
             <script src="https://embed.twitch.tv/embed/v1.js"></script>
             <script type="text/javascript">
             var embed = new Twitch.Embed("twitch-embed", {
-                width: "100%",
-                height: "100%",
+                width: 720,
+                height: 480,
                 channel: "timblazing",
                 layout: "video",
                 autoplay: false,
@@ -51,8 +51,8 @@
             <script src="https://embed.twitch.tv/embed/v1.js"></script>
             <script type="text/javascript">
             var embed = new Twitch.Embed("twitch-embed2", {
-                width: "100%",
-                height: "100%",
+                width: 720,
+                height: 480,
                 channel: "donthaysme",
                 layout: "video",
                 autoplay: false,
@@ -79,8 +79,8 @@
             <script src="https://embed.twitch.tv/embed/v1.js"></script>
             <script type="text/javascript">
             var embed = new Twitch.Embed("twitch-embed3", {
-                width: "100%",
-                height: "100%",
+                width: 720,
+                height: 480,
                 channel: "foulinallen",
                 layout: "video",
                 autoplay: false,
@@ -107,8 +107,8 @@
             <script src="https://embed.twitch.tv/embed/v1.js"></script>
             <script type="text/javascript">
             var embed = new Twitch.Embed("twitch-embed4", {
-                width: "100%",
-                height: "100%",
+                width: 720,
+                height: 480,
                 channel: "coleton112",
                 layout: "video",
                 autoplay: false,
@@ -122,6 +122,21 @@
         </div>
     </div>
 </div>
+<svg style="display: none">
+    <symbol id="arrow-right" viewBox="0 0 20 10">
+        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+    </symbol>
+    <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="1.8" numOctaves="6" stitchTiles="stitch"></feTurbulence>
+    </filter>
+</svg>
+<script>
+    function showDiv(divId, button) {
+        var div = document.getElementById(divId);
+        div.style.display = "block";
+        button.style.display = "none";
+    }
+</script>
   
 </body>
 </html>
