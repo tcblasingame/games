@@ -20,26 +20,21 @@
         </button>
         <div id="timDiv" class="hiddenDiv" style="display:none">
             <div id="twitch-embed"></div>
-
-      <!-- Load the Twitch embed script -->
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
-  
-      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
-      <script type="text/javascript">
-        var embed = new Twitch.Embed("twitch-embed", {
-          width: auto,
-          height: auto,
-          channel: "timblazing",
-          layout: "video",
-          autoplay: false,
-          // only needed if your site is also embedded on embed.example.com and othersite.example.com
-          parent: ["blasin.games","www.blasin.games"]
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-        var player = embed.getPlayer();
-        player.play();
-      });
-      </script>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+                width: 640,
+                height: 480,
+                channel: "timblazing",
+                layout: "video",
+                autoplay: false,
+                parent: ["blasin.games","www.blasin.games"]
+            });
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.play();
+            });
+            </script>
         </div>
     </div>
     <div class="card" style="--color: #00bb00">
@@ -52,7 +47,22 @@
             </div>
         </button>
         <div id="jacobDiv" class="hiddenDiv" style="display:none">
-            Jacob's content goes here.
+            <div id="twitch-embed"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+                width: 640,
+                height: 480,
+                channel: "donthaysme",
+                layout: "video",
+                autoplay: false,
+                parent: ["blasin.games","www.blasin.games"]
+            });
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.play();
+            });
+            </script>
         </div>
     </div>
     <div class="card" style="--color: #0f2bff">
