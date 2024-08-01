@@ -75,7 +75,22 @@
             </div>
         </button>
         <div id="alDiv" class="hiddenDiv" style="display:none">
-            AL's content goes here.
+            <div id="twitch-embed"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+                width: 640,
+                height: 480,
+                channel: "foulinallen",
+                layout: "video",
+                autoplay: false,
+                parent: ["blasin.games","www.blasin.games"]
+            });
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.play();
+            });
+            </script>
         </div>
     </div>
     <div class="card" style="--color: #ff6a2f">
@@ -88,7 +103,22 @@
             </div>
         </button>
         <div id="coleDiv" class="hiddenDiv" style="display:none">
-            Cole's content goes here.
+            <div id="twitch-embed"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+                width: 640,
+                height: 480,
+                channel: "coleton112",
+                layout: "video",
+                autoplay: false,
+                parent: ["blasin.games","www.blasin.games"]
+            });
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+            var player = embed.getPlayer();
+            player.play();
+            });
+            </script>
         </div>
     </div>
 </div>
