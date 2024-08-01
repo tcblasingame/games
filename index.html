@@ -20,12 +20,21 @@
             <li><a href="https://www.twitch.tv/timblazing" target="_blank"><i class="fa-brands fa-twitch"></i></a></li>
         </div>
       </div>
-      <iframe
-    src="https://player.twitch.tv/?rizzo&parent=blasin.games"
-    height="720"
-    width="1080"
-    allowfullscreen>
-</iframe>
+      <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "rizzo",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["blasin.games", "www.blasin.games/", "www.blasin.games", "blasin.games/"]
+      });
+    </script>
       <div class="gradient-border">
        <!-- Add a placeholder for the Twitch embed -->
      
