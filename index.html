@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>blasin.games</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/scripts.js" defer></script>
-    <script
-            src="https://kit.fontawesome.com/13388f1b9c.js"
-            crossorigin="anonymous"
-        ></script>
-        <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
-  </head>
-  <body>
-    <div class="nav" id="nav">
-        <a href="/index.html"><h1>TimBlazing</h1></a>
-        <div class="links">
-            <li><a href="https://www.twitch.tv/timblazing" target="_blank"><i class="fa-brands fa-twitch"></i></a></li>
-        </div>
-      </div>
-      <div id="twitch-embed"></div>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>blasin.games</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <div class="card" style="--color: #00afaf">
+        <button class="button" onclick="showDiv('timDiv', this)">
+            <span class="text">Tim</span>
+            <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+        </button>
+        <div id="timDiv" class="hiddenDiv" style="display:none">
+            <div id="twitch-embed"></div>
 
       <!-- Load the Twitch embed script -->
       <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -28,8 +27,8 @@
       <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
       <script type="text/javascript">
         var embed = new Twitch.Embed("twitch-embed", {
-          width: 854,
-          height: 480,
+          width: 480,
+          height: 240,
           channel: "timblazing",
           layout: "video",
           autoplay: false,
@@ -41,8 +40,64 @@
         player.play();
       });
       </script>
-      
-       <!-- Add a placeholder for the Twitch embed -->
-     
-    </body>
+        </div>
+    </div>
+    <div class="card" style="--color: #00bb00">
+        <button class="button" onclick="showDiv('jacobDiv', this)">
+            <span class="text">Jacob</span>
+            <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+        </button>
+        <div id="jacobDiv" class="hiddenDiv" style="display:none">
+            Jacob's content goes here.
+        </div>
+    </div>
+    <div class="card" style="--color: #0f2bff">
+        <button class="button" onclick="showDiv('alDiv', this)">
+            <span class="text">AL</span>
+            <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+        </button>
+        <div id="alDiv" class="hiddenDiv" style="display:none">
+            AL's content goes here.
+        </div>
+    </div>
+    <div class="card" style="--color: #ff6a2f">
+        <button class="button" onclick="showDiv('coleDiv', this)">
+            <span class="text">Cole</span>
+            <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+        </button>
+        <div id="coleDiv" class="hiddenDiv" style="display:none">
+            Cole's content goes here.
+        </div>
+    </div>
+</div>
+<svg style="display: none">
+    <symbol id="arrow-right" viewBox="0 0 20 10">
+        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+    </symbol>
+    <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="1.8" numOctaves="6" stitchTiles="stitch"></feTurbulence>
+    </filter>
+</svg>
+<script>
+    function showDiv(divId, button) {
+        var div = document.getElementById(divId);
+        div.style.display = "block";
+        button.style.display = "none";
+    }
+</script>
+  
+</body>
 </html>
+
