@@ -15,13 +15,13 @@ body, html {
     height: 100%;
 }
 
-.hiddenDiv {
+.video-wrapper {
     flex: 1 1 50%; /* This means flex-grow: 1, flex-shrink: 1, flex-basis: 50% */
     position: relative;
 }
 
-.twitch-embed {
+#twitch-embed, #twitch-embed2, #twitch-embed3, #twitch-embed4 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    position: absolute;
 }

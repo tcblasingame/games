@@ -1,89 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blasin.games</title>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./styles.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div id="timDiv" class="hiddenDiv">
+        <div class="video-wrapper" id="timDiv">
             <div id="twitch-embed"></div>
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-            <script type="text/javascript">
-            var embed = new Twitch.Embed("twitch-embed", {
-                width: 680,
-                height: 400,
-                channel: "timblazing",
-                layout: "video",
-                autoplay: false,
-                parent: ["blasin.games","www.blasin.games"]
-            });
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-            });
-            </script>
         </div>
-        <div id="jacobDiv" class="hiddenDiv">
+        <div class="video-wrapper" id="jacobDiv">
             <div id="twitch-embed2"></div>
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-            <script type="text/javascript">
-            var embed = new Twitch.Embed("twitch-embed2", {
-                width: 680,
-                height: 400,
-                channel: "donthaysme",
-                layout: "video",
-                autoplay: false,
-                parent: ["blasin.games","www.blasin.games"]
-            });
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-            });
-            </script>
         </div>
-        <div id="alDiv" class="hiddenDiv">
+        <div class="video-wrapper" id="alDiv">
             <div id="twitch-embed3"></div>
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-            <script type="text/javascript">
-            var embed = new Twitch.Embed("twitch-embed3", {
-                width: 680,
-                height: 400,
-                channel: "foulinallen",
-                layout: "video",
-                autoplay: false,
-                parent: ["blasin.games","www.blasin.games"]
-            });
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-            });
-            </script>
         </div>
-        <div id="coleDiv" class="hiddenDiv">
+        <div class="video-wrapper" id="coleDiv">
             <div id="twitch-embed4"></div>
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-            <script type="text/javascript">
-            var embed = new Twitch.Embed("twitch-embed4", {
-                width: 680,
-                height: 400,
-                channel: "coleton112",
-                layout: "video",
-                autoplay: false,
-                parent: ["blasin.games","www.blasin.games"]
-            });
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-            });
-            </script>
         </div>
     </div>
-  
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            channel: "timblazing",
+            layout: "video",
+            autoplay: false,
+            parent: ["blasin.games","www.blasin.games"]
+        });
+
+        new Twitch.Embed("twitch-embed2", {
+            channel: "donthaysme",
+            layout: "video",
+            autoplay: false,
+            parent: ["blasin.games","www.blasin.games"]
+        });
+
+        new Twitch.Embed("twitch-embed3", {
+            channel: "foulinallen",
+            layout: "video",
+            autoplay: false,
+            parent: ["blasin.games","www.blasin.games"]
+        });
+
+        new Twitch.Embed("twitch-embed4", {
+            channel: "coleton112",
+            layout: "video",
+            autoplay: false,
+            parent: ["blasin.games","www.blasin.games"]
+        });
+    </script>
 </body>
 </html>
-
